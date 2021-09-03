@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+    <title>SHHHHHHHH</title> 
+
+    <!-- Required meta tags always come first --> 
+
+    <meta charset="utf-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head> 
+
+  
+
+<body> 
+    <div class="container">
+        <h1 class="text-center">Welcome to My hidden feature page</h1>
+        <div class="feature">
+            <h5>Feature 1: Margin Calculator</h5>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Margin (%)</span>
+                <input type="text" id="margin_perc" class="form-control" >
+                <span class="input-group-text">%</span>
+                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Original Price</span>
+                <input type="text" id="ori_price" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Selling Price</span>
+                <input type="text" id="selling_price" class="form-control" disabled>
+                <button class="btn btn-secondary" onclick="copyText()" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard">
+                    Copy text
+                </button>
+            </div>
+    
+            <div class="row">
+                <button onclick="calculate_selling_price()" class="btn btn-primary">Calculate Selling Price</button>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h5>Feature 2: Download From Link(In progress)</h5>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">File Name</span>
+                <input type="text" class="form-control" placeholder="File_Name" aria-label="File_Name" aria-describedby="basic-addon1">
+              </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Image Links</span>
+                <textarea class="form-control" id="image_link" aria-label="With textarea"></textarea>
+              </div>
+    
+            <div class="row">
+                <button onclick="check_input()" class="btn btn-primary">Download Images</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/hidden_feature.js"></script>
+
+</body> 
+
+</html> 
